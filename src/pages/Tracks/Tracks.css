@@ -1,0 +1,189 @@
+.tracks-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .page-header h1 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .tracks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .track-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .track-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .track-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .track-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .track-card:hover .track-image {
+    transform: scale(1.05);
+  }
+  
+  .track-icon-container {
+    position: absolute;
+    bottom: -25px;
+    right: 20px;
+    background: var(--beige-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+  }
+  
+  .track-icon {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+  }
+  
+  .track-content {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+  
+  .track-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .track-description {
+    color: var(--primary-color);
+    opacity: 0.9;
+    line-height: 1.5;
+  }
+  
+  .registration-section {
+    background: var(--beige-color);
+    padding: 2.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .section-title {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-family);
+  }
+  
+  .form-group:nth-child(5),
+  .form-group:nth-child(6) {
+    grid-column: span 2;
+  }
+  
+  .submit-button {
+    grid-column: span 2;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-family);
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  
+  .submit-button:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .tracks-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .registration-form {
+      grid-template-columns: 1fr;
+    }
+    
+    .form-group:nth-child(5),
+    .form-group:nth-child(6) {
+      grid-column: span 1;
+    }
+    
+    .submit-button {
+      grid-column: span 1;
+    }
+    
+    .page-header h1 {
+      font-size: 2rem;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,127 @@
+.leadership-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--primary-color);
+}
+  
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+  
+.page-header h1 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+  
+.page-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+    line-height: 1.6;
+}
+  
+  .leadership-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .leader-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .leader-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .leader-image-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .leader-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .leader-card:hover .leader-image {
+    transform: scale(1.05);
+  }
+  
+  .role-icon-container {
+    position: absolute;
+    bottom: -25px;
+    right: 20px;
+    background: var(--beige-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+  }
+  
+  .role-icon {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+  }
+  
+  .leader-content {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+  
+  .leader-name {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .leader-role {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .leader-bio {
+    color: var(--primary-color);
+    opacity: 0.9;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .leadership-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .page-header h1 {
+      font-size: 2rem;
+    }
+  }
