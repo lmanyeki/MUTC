@@ -13,9 +13,9 @@ function Nav() {
         
         <div className="nav-links">
           <Link to="/" className="nav-link">Home</Link>
+          <Link to="/leadership" className="nav-link">Leadership</Link>
           <Link to="/tracks" className="nav-link">Tracks</Link>
           <Link to="/events" className="nav-link">Events</Link>
-          <Link to="/leadership" className="nav-link">Leadership</Link>
         </div>
         
         <button className="join-button">Join Now</button>

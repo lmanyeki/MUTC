@@ -76,8 +76,7 @@ interface Event {
     <div className="events-page">
       <header className="page-header">
         <h1>MUTC Events Schedule</h1>
-        <p className="page-description">
-          The Events Page serves as a comprehensive guide to the weekly schedule of MUTC. 
+        <p className="page-description"> 
           From Monday through Saturday, members can expect a diverse range of learning 
           opportunities and activities.
         </p>

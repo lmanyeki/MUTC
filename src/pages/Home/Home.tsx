@@ -1,16 +1,20 @@
 import './Home.css';
 import About from "../../Components/About/About";
-import Nav from '../../Components/Nav/Nav';
-import Footer from '../../Components/Footer/Footer';
 import Testimonials from '../../Components/Testimonials/Testimonials';
-
+import heroimg from "../../assets/hero-image.jpg";
 
 function Home() {
-  
   return (
     <div className="home-page">
-      <Nav />
-      <section className="hero-section">
+      <section 
+        className="hero-section"
+        style={{
+          background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroimg})`,
+          backgroundSize: `cover`,
+          backgroundPosition: 'initial',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="hero-overlay">
           <div className="hero-content">
             <h1>Empowering Future Tech Leaders</h1>
@@ -27,10 +31,6 @@ function Home() {
       </section>
       <About />
       <Testimonials />
-      <Footer />
-      
-
-      
     </div>
   );
 }
