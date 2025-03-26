@@ -6,7 +6,7 @@ body {
 }
 
 .events-page {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 .page-description {
-  max-width: 800px;
+  max-width: 50rem;
   margin: 0 auto;
   color: var(--primary-color);
   font-size: 1.1rem;
@@ -37,9 +37,9 @@ body {
 
 .event-card {
   background-color: white;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 

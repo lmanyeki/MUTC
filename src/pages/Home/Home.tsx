@@ -11,7 +11,7 @@ function Home() {
         style={{
           background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroimg})`,
           backgroundSize: `cover`,
-          backgroundPosition: 'initial',
+          backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >

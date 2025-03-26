@@ -7,22 +7,22 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
   }
   
   .testimonial-card {
     background: var(--white-color);
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
     position: relative;
     text-align: center;
   }
   
   .testimonial-image-container {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 1.5rem;
